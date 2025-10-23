@@ -3,38 +3,45 @@ from InquirerPy import prompt
 # https://inquirerpy.readthedocs.io/en/latest/
 
 questions = [
-        { "type": "input", "message": "README title:" },
-        { "type": "input", "message": "README description:" },
-        { "type": "input", "message": "README installation:" },
-        { "type": "input", "message": "README usage:" },
+        { "type": "input", "message": "README title:", "name": "title" },
+        { "type": "input", "message": "README description:", "name": "description" },
+        { "type": "input", "message": "README installation:", "name": "installation" },
+        { "type": "input", "message": "README usage:", "name": "usage" },
         {
             "type": "list",
             "message": "Select a lisence type.",
             "choices": [ "License 1", "License 2", "License 3" ],
+            "name": "license"
         },
-        { "type": "confirm", "message": "confirm" },
-        { "type": "input", "message": "README author:" },
-        { "type": "input", "message": "README contact info:" },
+        { "type": "confirm", "message": "confirm", "name": "confirm" },
+        { "type": "input", "message": "README author:", "name": "author" },
+        { "type": "input", "message": "README contact info:", "name": "contact" },
+        { "type": "input", "message": "Markdown name:", "name": "file_name" },
 ]
 
 result = prompt(questions)
-title = result[0]
-description = result[1]
-installation = result[2]
-usage = result[3]
-lisence = result[4]
-author = result[5]
-contact = result[6]
+# title = result[0]
+title = result["title"]
+description = result["description"]
+installation = result["installation"]
+usage = result["usage"]
+license = result["license"]
+author = result["author"]
+contact = result["contact"]
+file_name = result["file_name"]
 print(title)
 print(description)
 print(installation)
 print(usage)
-print(lisence)
+print(license)
 print(author)
+print("contact")
 print(contact)
+print("file")
+print(file_name)
 
 # https://www.w3schools.com/python/python_file_write.asp
-with open("README.md", "w") as file:
+with open(f"{file_name}.md", "w") as file:
     file.write(f"""
 {title}
 ---
@@ -44,7 +51,7 @@ with open("README.md", "w") as file:
 ---
 {usage}
 ---
-{lisence}
+{license}
 ---
 {author} | {contact}""")
-    print("README updated!")
+    print(f"{file_name} updated!")
