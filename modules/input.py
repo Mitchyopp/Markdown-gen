@@ -1,7 +1,8 @@
+from InquirerPy import prompt
 # I'm using the package below because its the more updated version and i found better documentation on it.
 # https://inquirerpy.readthedocs.io/en/latest/
 
-class input:
+class TakeInput:
     def __init__(self):
         self.questions = [
             { "type": "input", "message": "README title:", "name": "title" },
@@ -19,3 +20,15 @@ class input:
             { "type": "input", "message": "README contact info:", "name": "contact" },
             { "type": "input", "message": "Markdown name:", "name": "file_name" },
     ]
+    
+    def PrintQuestions(self):
+        result = prompt(self.questions)
+        print(result["title"])
+        print(result["description"])
+        print(result["installation"])
+        print(result["usage"])
+        print(result["license"])
+        print(result["author"])
+        print(result["contact"])
+        print(result["file_name"])
+        return result

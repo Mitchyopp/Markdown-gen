@@ -1,22 +1,32 @@
-class output:
+class ShowOutput:
     def __init__(self):
-        result = prompt(questions)
-        # title = result[0]
-        title = result["title"]
-        description = result["description"]
-        installation = result["installation"]
-        usage = result["usage"]
-        license = result["license"]
-        author = result["author"]
-        contact = result["contact"]
-        file_name = result["file_name"]
-        print(title)
-        print(description)
-        print(installation)
-        print(usage)
-        print(license)
-        print(author)
-        print("contact")
-        print(contact)
-        print("file")
-        print(file_name)
+        # https://www.w3schools.com/python/python_file_write.asp
+        with open(f"{file_name}.md", "w") as file:
+            file.write(f"""
+        # {title}
+
+        ---
+
+        # description
+        {description}
+
+        ---
+
+        # installation
+        {installation}
+
+        ---
+
+        # usage
+        {usage}
+
+        ---
+
+        # license
+        {license}
+
+        ---
+
+        # author & contact
+        {author} | {contact}""")
+            print(f"{file_name} updated!")
