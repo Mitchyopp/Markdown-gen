@@ -7,7 +7,12 @@ questions = [
         { "type": "input", "message": "README description:" },
         { "type": "input", "message": "README installation:" },
         { "type": "input", "message": "README usage:" },
-        { "type": "input", "message": "README lisence:" },
+        {
+            "type": "list",
+            "message": "Select a lisence type.",
+            "choices": [ "License 1", "License 2", "License 3" ],
+        },
+        { "type": "confirm", "message": "confirm" },
         { "type": "input", "message": "README author:" },
         { "type": "input", "message": "README contact info:" },
 ]
