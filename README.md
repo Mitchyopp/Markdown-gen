@@ -9,7 +9,7 @@ This is a python cli tool that will ask you questions about how you would like t
 ---
 
 # installation
-Simply `git clone https://github.com/Mitchyopp/README-maker`
+Simply `git clone https://github.com/Mitchyopp/Markdown-gen`
 
 ---
 

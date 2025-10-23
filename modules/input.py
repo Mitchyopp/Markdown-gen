@@ -12,7 +12,7 @@ class TakeInput:
             {
                 "type": "list",
                 "message": "Select a lisence type.",
-                "choices": [ "License 1", "License 2", "License 3" ],
+                "choices": [ "MIT license", "GNU GPLv3", "None" ],
                 "name": "license"
             },
             { "type": "confirm", "message": "confirm", "name": "confirm" },
