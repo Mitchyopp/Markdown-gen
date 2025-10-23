@@ -1,5 +1,10 @@
+> [!NOTE]
+> For those who would like to use venv please do `python -m venv .venv && soruce .venv/bin/activate`
 
 # Markdown generator
+
+
+[Showcase](https://github.com/Mitchyopp/Markdown-gen/assets/readme.mp4)
 
 ---
 
@@ -14,7 +19,7 @@ Simply `git clone https://github.com/Mitchyopp/Markdown-gen`
 ---
 
 # Usage
-Fair use.
+`cd` into the `Markdown-gen` directory and then `python main.py`
 
 ---
 
