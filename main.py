@@ -1,0 +1,7 @@
+title = input("Title: \n")
+description = input("description: \n")
+installation = input("installation: \n")
+usage = input("usage: \n")
+liscence = input("liscence: \n")
+author = input("author: \n")
+contact_info = input("contact_info: \n")
