@@ -3,7 +3,7 @@
 
 # Markdown generator
 
-[Showcase](https://github.com/Mitchyopp/Markdown-gen/assets/readme.gif)
+![Demo](https://raw.githubusercontent.com/Mitchyopp/Markdown-gen/main/assets/readme.gif)
 
 ---
 
