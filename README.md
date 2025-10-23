@@ -6,6 +6,8 @@
 
 [Showcase](https://github.com/Mitchyopp/Markdown-gen/assets/readme.mp4)
 
+<video src="https://github.com/Mitchyopp/Markdown-gen//assets/readme.mp4?raw=true" controls width="600"></video>
+
 ---
 
 # Description
