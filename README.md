@@ -4,7 +4,8 @@
 # Markdown generator
 
 ![Demo](https://raw.githubusercontent.com/Mitchyopp/Markdown-gen/main/assets/readme.gif)
-![Demo](https://raw.githubusercontent.com/Mitchyopp/Markdown-gen/main/assets/readme.mp4)
+This will download the video if you click it
+![Video download](https://raw.githubusercontent.com/Mitchyopp/Markdown-gen/main/assets/readme.mp4)
 
 ---
 
