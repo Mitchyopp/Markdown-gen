@@ -32,3 +32,19 @@ print(usage)
 print(lisence)
 print(author)
 print(contact)
+
+# https://www.w3schools.com/python/python_file_write.asp
+with open("README.md", "w") as file:
+    file.write(f"""
+               {title}
+               ---
+               {description}
+               ---
+               {installation}
+               ---
+               {usage}
+               ---
+               {lisence}
+               ---
+               {author} | {contact}""")
+    print("README updated!")
