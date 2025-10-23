@@ -1,12 +1,12 @@
 
-README
+# Markdown generator
 ---
-This is a description of the README
+This is a python cli tool that will ask you questions about how you would like to have your markdown file made and it will then format it and generate it for you!
 ---
-To install this please `git clone` the repo
+Simply `git clone https://github.com/Mitchyopp/README-maker`
 ---
-Free use
+Fair use.
 ---
-License 2
+License 3
 ---
-True | Mitchyopp
+Mitchyopp | MitchoppDEV@gmail.com | mitchopp on discord.
