@@ -23,12 +23,12 @@ class TakeInput:
     
     def PrintQuestions(self):
         result = prompt(self.questions)
-        print(result["title"])
-        print(result["description"])
-        print(result["installation"])
-        print(result["usage"])
-        print(result["license"])
-        print(result["author"])
-        print(result["contact"])
-        print(result["file_name"])
+        # print(result["title"])
+        # print(result["description"])
+        # print(result["installation"])
+        # print(result["usage"])
+        # print(result["license"])
+        # print(result["author"])
+        # print(result["contact"])
+        # print(result["file_name"])
         return result

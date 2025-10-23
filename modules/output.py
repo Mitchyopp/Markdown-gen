@@ -1,32 +1,32 @@
 class ShowOutput:
-    def __init__(self):
+    def __init__(self, result):
         # https://www.w3schools.com/python/python_file_write.asp
-        with open(f"{file_name}.md", "w") as file:
+        with open(f"{result["file_name"]}.md", "w") as file:
             file.write(f"""
-        # {title}
+# {result["title"]}
 
-        ---
+---
 
-        # description
-        {description}
+# description
+{result["description"]}
 
-        ---
+---
 
-        # installation
-        {installation}
+# installation
+{result["installation"]}
 
-        ---
+---
 
-        # usage
-        {usage}
+# usage
+{result["usage"]}
 
-        ---
+---
 
-        # license
-        {license}
+# license
+{result["license"]}
 
-        ---
+---
 
-        # author & contact
-        {author} | {contact}""")
-            print(f"{file_name} updated!")
+# author & contact
+{result["author"]} | {result["contact"]}""")
+            print(f"{result["file_name"]} updated!")
