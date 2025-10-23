@@ -5,10 +5,10 @@ from InquirerPy import prompt
 class TakeInput:
     def __init__(self):
         self.questions = [
-            { "type": "input", "message": "README title:", "name": "title" },
-            { "type": "input", "message": "README description:", "name": "description" },
-            { "type": "input", "message": "README installation:", "name": "installation" },
-            { "type": "input", "message": "README usage:", "name": "usage" },
+            { "type": "input", "message": "Markdown title:", "name": "title" },
+            { "type": "input", "message": "Markdown description:", "name": "description" },
+            { "type": "input", "message": "Markdown installation:", "name": "installation" },
+            { "type": "input", "message": "Markdown usage:", "name": "usage" },
             {
                 "type": "list",
                 "message": "Select a lisence type.",
@@ -16,19 +16,11 @@ class TakeInput:
                 "name": "license"
             },
             { "type": "confirm", "message": "confirm", "name": "confirm" },
-            { "type": "input", "message": "README author:", "name": "author" },
-            { "type": "input", "message": "README contact info:", "name": "contact" },
+            { "type": "input", "message": "Markdown author:", "name": "author" },
+            { "type": "input", "message": "Markdown contact info:", "name": "contact" },
             { "type": "input", "message": "Markdown name:", "name": "file_name" },
     ]
     
     def PrintQuestions(self):
         result = prompt(self.questions)
-        # print(result["title"])
-        # print(result["description"])
-        # print(result["installation"])
-        # print(result["usage"])
-        # print(result["license"])
-        # print(result["author"])
-        # print(result["contact"])
-        # print(result["file_name"])
         return result
