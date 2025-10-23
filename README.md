@@ -3,8 +3,6 @@
 
 # Markdown generator
 
-
-[Showcase](https://github.com/Mitchyopp/Markdown-gen/assets/readme.mp4)
 [Showcase](https://github.com/Mitchyopp/Markdown-gen/assets/readme.gif)
 
 ---
